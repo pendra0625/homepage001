@@ -9,3 +9,7 @@ img {
   min-width: 240px;
   width: 100%;
 }
+
+.uchikeshi {
+  text-decoration: line-through;
+}
