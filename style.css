@@ -13,3 +13,7 @@ img {
 .uchikeshi {
   text-decoration: line-through;
 }
+
+a {
+  text-decoration: none;
+}
