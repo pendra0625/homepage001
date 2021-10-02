@@ -4,7 +4,11 @@ li {
   margin: 10px;
 }
 
-img {
+#mini-pic {
+  max-width: 100px;
+}
+
+#sashie {
   max-width: 800px;
   min-width: 240px;
   width: 100%;
