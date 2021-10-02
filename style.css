@@ -21,3 +21,12 @@ a {
 h3 {
   margin: 0;
 }
+
+table {
+  outline: 1;
+  vertical-align: top;
+}
+
+th {
+  outline: 1;
+}
