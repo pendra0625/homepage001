@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>pendra HP > gallery</title>
   <!-- <link rel="stylesheet" href="https://pendra0625.github.io/homepage001/style.css"> -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-gallery.css">
+  <script src="https://kit.fontawesome.com/363437cb97.js" crossorigin="anonymous"></script>
+  <script src="javascripts/gallery.js" defer></script>
 </head>
 <body>
   <h1><a href="index.html">pendra HP</a> > gallery</h1>
@@ -14,6 +16,17 @@
     <script src="javascripts/menu.js"></script>
   </nav>
   <main>
+    <!-- スライダー -->
+    <div class="mainImage">
+      <div id="prevImage" class="prevImage fas fa-chevron-left"></div> <!-- #prevImage.prevImage.fas.fa-chevron-left -->
+      <div id="nextImage" class="nextImage fas fa-chevron-right"></div>
+      <img id="mainImage">
+      <div id="currentSlideNumber" class="currentSlideNumber"></div>
+    </div>
+
+    <ul id="imagelist" class="imagelist"></ul>
+    <!-- スライダー -->
+    <!--
     <h3>new</h3>
     <p>
       <h4>2021年</h4>
@@ -38,10 +51,10 @@
         </tr>
       </table>
     </p>
+  -->
   </main>
   <footer>
     <a href="#top">top</a>
   </footer>
-  <script src="javascripts/gallery.js"></script>
 </body>
 </html>

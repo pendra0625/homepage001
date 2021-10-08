@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+li {
+  display: inline;
+  list-style: none;
+  margin: 10px;
+}
+
+/*
+#mini-pic {
+  width: 100px;
+}
+
+#sashie {
+  max-width: 800px;
+  min-width: 240px;
+  width: 100%;
+}
+
+#sashie-m {
+  max-width: 400px;
+  min-width: 240px;
+  width: 100%;
+}
+
+*/
+
+.uchikeshi {
+  text-decoration: line-through;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  margin: 0;
+}
+
+table {
+  outline: 1;
+  vertical-align: top;
+}
+
+th {
+  outline: 1;
+}
+
+/* スライダー */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.mainImage {
+  max-width: 528px;
+  width: 100%;
+  margin: 0 auto 100px; /* m0:a100 と書けるらしい */
+  padding: 0 40px; /* p0:40 と書ける */
+  position: relative;
+  user-select: none;
+}
+
+.mainImage .prevImage,
+.mainImage .nextImage {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: .3s;
+  cursor: pointer;
+}
+
+.mainImage .prevImage.inActive,
+.mainImage .nextImage.inActive {
+  opacity: .3;
+  pointer-events: none;
+}
+
+.mainImage .prevImage {
+  left: 0;
+}
+
+.mainImage .nextImage {
+  right: 0;
+}
+
+.mainImage .prevImage::before,
+.mainImage .nextImage::before {
+  font-size: 30px;
+  color: #555;
+}
+
+.mainImage .prevImage:hover,
+.mainImage .nextImage:hover {
+  opacity: .5;
+}
+
+.mainImage img {
+  width: 100%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.mainImage .currentSlideNumber {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.imagelist {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 3.5%;
+}
+
+.imagelist li {
+  list-style: none;
+  width: 10%;
+  height: 80px; /* h200 と書いた */
+  background-repeat: no-repeat;
+  background-position: center; /* bp:center */
+  background-size: cover;
+  cursor: pointer; /* マウスを置いたら手にする */
+  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  transform: 0.3s;
+}
+
+.imagelist li:hover {
+  opacity: .7;
+  transform: scale(1.05);
+}
+
+/* スライダー */
