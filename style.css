@@ -12,6 +12,7 @@ li {
   max-width: 800px;
   min-width: 240px;
   width: 100%;
+  margin: 0;
 }
 
 #sashie-m {
