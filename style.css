@@ -5,6 +5,8 @@ li#menu {
 }
 li#howto {
   list-style: none;
+  text-align: center;
+  margin-right: 30px;
 }
 
 #mini-pic {
@@ -19,6 +21,12 @@ li#howto {
 }
 
 #sashie-m {
+  max-width: 400px;
+  min-width: 240px;
+  width: 100%;
+}
+
+.sashie-m {
   max-width: 400px;
   min-width: 240px;
   width: 100%;
@@ -47,6 +55,7 @@ th {
 
 table.border {
   border: solid;
+  border-width: 1px;
 }
 
 .box {
