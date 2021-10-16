@@ -1,7 +1,10 @@
-li {
+li#menu {
   display: inline;
   list-style: none;
   margin: 10px;
+}
+li#howto {
+  list-style: none;
 }
 
 #mini-pic {
@@ -52,4 +55,8 @@ table.border {
   height: 200px;
   border: 1px solid #000;
   overflow-y: scroll;
+}
+
+.hutoi {
+  font-weight: bold;
 }
