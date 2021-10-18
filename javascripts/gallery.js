@@ -11,38 +11,38 @@
 
 // スライダー
 
-const imageTotalNumber = 10,
-      mainImageElement = document.getElementById('mainImage'),
-      imageListElement = document.getElementById('imagelist'),
-      prevImageElement = document.getElementById('prevImage'),
-      nextImageElement = document.getElementById('nextImage');
+const imageTotalNumber = 10, // 画像の最大個数
+      mainImageElement = document.getElementById('mainImage'), // 画像を表示する部分
+      imageListElement = document.getElementById('imagelist'), // ミニ画像を表示する部分
+      prevImageElement = document.getElementById('prevImage'), // 前の画像
+      nextImageElement = document.getElementById('nextImage'); // 次の画像
 
-let currentSlideNumber = 1
+let currentSlideNumber = 1 // 現在のスライドナンバーの数字
 
-mainImageElement.setAttribute('src', 'images/ga/img1.png');
+mainImageElement.setAttribute('src', 'images/ga/img1.png'); // src を指定のid位置に加え、中身を記述
 
 function changeSlideStatus() {
-  if (currentSlideNumber === 1) {
-    prevImageElement.classList.add('inActive')
+  if (currentSlideNumber === 1) { // 現在の位置が始めり(1)の時、以下の文を実行する
+    prevImageElement.classList.add('inActive') // classに inActive を加える。classは複数の加える事ができる。
   } else {
-    prevImageElement.classList.remove('inActive')
+    prevImageElement.classList.remove('inActive') // それ以外の時、inActiveのclassを外す。
   }
 
-  if (currentSlideNumber === imageTotalNumber) {
-    nextImageElement.classList.add('inActive')
+  if (currentSlideNumber === imageTotalNumber) { // 現在位置がトータルの数と一致した時以下の文を実行する
+    nextImageElement.classList.add('inActive') // inActive のclassは、選択できない様にするものらしい
   } else {
-    nextImageElement.classList.remove('inActive')
+    nextImageElement.classList.remove('inActive') // それ以外では inActive を解除する
   }
 
-  document.getElementById('currentSlideNumber').textContent = `${currentSlideNumber} / ${imageTotalNumber}`
+  document.getElementById('currentSlideNumber').textContent = `${currentSlideNumber} / ${imageTotalNumber}` // 選択画像の下に現在の番号を表示
 }
-changeSlideStatus()
+changeSlideStatus() // 上に書いた文を実行している
 
-for (let i = 0; i < imageTotalNumber; i++) {
+for (let i = 0; i < imageTotalNumber; i++) { // ミニ画像の表示に関わるもの
   const liElement = document.createElement('li');
   liElement.style.backgroundImage = `url(images/ga/img${i + 1}.png)`
 
-  liElement.addEventListener('click', () => {
+  liElement.addEventListener('mouseover', () => {
     mainImageElement.setAttribute('src', `images/ga/img${i + 1}.png`)
     currentSlideNumber = i + 1
     changeSlideStatus()
@@ -51,7 +51,7 @@ for (let i = 0; i < imageTotalNumber; i++) {
   imageListElement.appendChild(liElement)
 }
 
-prevImageElement.addEventListener('click', () => {
+prevImageElement.addEventListener('click', () => { // mainの画像の横の < の挙動に関わる記述
   if (currentSlideNumber !== 1) {
     currentSlideNumber--
     mainImageElement.setAttribute('src', `images/ga/img${currentSlideNumber}.png`)
@@ -59,7 +59,7 @@ prevImageElement.addEventListener('click', () => {
   }
 })
 
-nextImageElement.addEventListener('click', () => {
+nextImageElement.addEventListener('click', () => { // mainの画像の横の > の挙動に関わる記述
   if (currentSlideNumber !== imageTotalNumber) {
     currentSlideNumber++
     mainImageElement.setAttribute('src', `images/ga/img${currentSlideNumber}.png`)

@@ -51,7 +51,7 @@ th {
   cursor: pointer;
 }
 
-.mainImage .prevImage.inActive,
+.mainImage .prevImage.inActive, /* .xxx .yyy.zzz は、<aaa class="xxx"><bbb class="yyy zzz"></bbb></aaa> という事 */
 .mainImage .nextImage.inActive {
   opacity: .3;
   pointer-events: none;
