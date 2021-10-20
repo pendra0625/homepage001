@@ -13,12 +13,32 @@ li#howto {
   width: 100px;
 }
 
-#sashie {
+/* #sashie {
+  position: relative;
+} */
+
+.wrap_sample {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  background: #333;
+}
+
+.relative_sample {
+  position: absolute;
+  width: 100%;
+  /* height: 50px; */
+  background: #f00;
+  opacity: 0.95;
+}
+
+/* #sashie {
   max-width: 800px;
   min-width: 240px;
   width: 100%;
   margin: 0;
-}
+} */
 
 #sashie-m {
   max-width: 400px;
@@ -64,8 +84,14 @@ table.border {
   height: 200px;
   border: 1px solid #000;
   overflow-y: scroll;
+  margin: 0 auto;
 }
 
 .hutoi {
   font-weight: bold;
+}
+
+.mannaka {
+  text-align: center;
+  margin: 0 auto;
 }
