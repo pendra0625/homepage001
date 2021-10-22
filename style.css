@@ -1,3 +1,11 @@
+div.yoko {
+  border:solid;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 100vw;
+  /* width: 500px; */
+}
+
 li#menu {
   display: inline;
   list-style: none;
