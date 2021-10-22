@@ -4,7 +4,8 @@ div.yoko {
   margin-right: 20%;
   height: 100vw; */
   margin: auto;
-  width: 500px;
+  max-width: 500px;
+  min-width: 250px;
 }
 
 li#menu {
