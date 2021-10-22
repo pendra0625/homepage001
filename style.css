@@ -1,9 +1,10 @@
 div.yoko {
-  border:solid;
+  /* border:solid;
   margin-left: 20%;
   margin-right: 20%;
-  height: 100vw;
-  /* width: 500px; */
+  height: 100vw; */
+  margin: auto;
+  width: 500px;
 }
 
 li#menu {
@@ -102,4 +103,8 @@ table.border {
 .mannaka {
   text-align: center;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 750px) {
+  img { max-width: 100%;}
 }
