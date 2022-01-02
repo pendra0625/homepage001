@@ -107,6 +107,10 @@ table.border {
   margin: 0 auto;
 }
 
+.k-kinshi {
+  white-space: nowrap;
+}
+
 @media screen and (max-width: 750px) {
   img { max-width: 100%;}
 }
