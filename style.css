@@ -114,3 +114,8 @@ table.border {
 @media screen and (max-width: 750px) {
   img { max-width: 100%;}
 }
+
+.box1 {
+  display: flex;
+  justify-content: end;
+}
